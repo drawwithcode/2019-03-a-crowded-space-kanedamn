@@ -15,7 +15,7 @@ function setup() {
 
       var tempx = x;
       var tempy = y;
-      var tempr = 30;
+      var tempr = 35;
 
       var tempBall = new Ball(tempx, tempy, tempr);
 
@@ -65,13 +65,13 @@ function Ball(_x, _y, _diam) {
       d1 = d;
     }
     if (this.yellow == true && d < this.size / 2) {
-      this.color = fill('red');
+      this.color = fill('gold');
     }
   }
 
   this.display = function() {
     if (this.yellow == true) {
-      this.color = fill('red');
+      this.color = fill('gold');
     }
     ellipse(this.x, this.y, this.size);
   }
